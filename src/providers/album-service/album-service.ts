@@ -55,10 +55,10 @@ export class AlbumServiceProvider {
   //Remove from favorite object in local storage
   unfavoriteLogo(LogoDetail) {
     return this.getAllFavoriteLogos().then(result => {
-       console.log("unfavoriteLogo " + result);
+      console.log("unfavoriteLogo " + result);
       if (result) {
         var index = result.findIndex(loc => loc.id === LogoDetail.id && loc.albumId === LogoDetail.albumId);
-         console.log("index unfavor " + index);
+        console.log("index unfavor " + index);
         result.splice(index, 1);
         return this.storage.set(STORAGE_KEY, result);
       }

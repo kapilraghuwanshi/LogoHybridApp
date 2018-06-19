@@ -19,11 +19,8 @@
 
 <ion-content padding>
 
-  <div *ngIf="albumDetails.length == 0">
-    There is no favourite icon you've selected!
-  </div>
   <ion-row>
-    <ion-col text-center style="font-weight: bold;font-size:18px;">List of Top Logos</ion-col>
+    <ion-col text-center class="title">List of Top Logos</ion-col>
   </ion-row>
   <div *ngFor="let logo of albumDetails;">
     <div (click)="goToSelectedLogo({selectedLogo : logo})">
