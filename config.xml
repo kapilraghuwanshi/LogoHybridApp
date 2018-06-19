@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>AlbumAppCollabera</name>
+<widget id="raghuwanshi.kapil.LogoAppRapidera" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>LogoAppRapidera</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="Kapil.Raghuwanshi@gmail.com" href="http://ionicframework.com/">Kapil Raghuwanshi</author>
     <content src="index.html" />

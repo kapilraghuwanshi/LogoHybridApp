@@ -48,7 +48,7 @@ export class LogoPage {
 
     fileTransferObj.download(imgPathUrl, imgDownloadPath, true)
       .then((entry) => {
-        alert('Download complete for your image at: ' + entry.toURL());
+        alert('Download complete for your image at : ' + entry.toURL());
       });
 
   }
