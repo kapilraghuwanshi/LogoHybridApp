@@ -1,0 +1,1 @@
+A simple app to demonstrate Ionic Cordova Storage and File Transfer plugin. Add to favourite and save to local storage SQLite.
