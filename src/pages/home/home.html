@@ -1,14 +1,47 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+  <ion-navbar color="primary">
+    <ion-row>
+      <ion-col col-9>
+        <ion-title text-center>
+          Collabera Album App
+        </ion-title>
+      </ion-col>
+      <ion-col col-3>
+        <ion-buttons end>
+          <button ion-button icon-only (click)="getFavouriteAlbumData()">
+            <ion-icon name="star"></ion-icon>
+          </button>
+        </ion-buttons>
+      </ion-col>
+    </ion-row>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+  <!-- <div *ngIf="albumDetails.length == 0">
+    There is no favourite icon you've selected!
+  </div> -->
+  <ion-row>
+    <ion-col text-center style="font-weight: bold;font-size:18px;">List of Top Logos</ion-col>
+  </ion-row>
+  <div *ngFor="let logo of albumDetails;">
+    <div (click)="goToSelectedLogo({selectedLogo : logo})">
+      <ion-item>
+        <ion-row>
+          <ion-col text-center>{{logo.title}}</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col text-center>
+            <img src={{logo.thumbnailUrl}}>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+    </div>
+  </div>
+  <ion-row>
+    <ion-col text-center>
+      <button ion-button (click)="goBackToAllLogos()"> Go back!</button>
+    </ion-col>
+  </ion-row>
 </ion-content>
