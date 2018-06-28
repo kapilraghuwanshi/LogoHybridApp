@@ -19,6 +19,7 @@ export class LogoPage {
     public filetransfer: FileTransfer, private file: File) {
 
     this.logoDetails = this.navParams.get('selectedLogo');
+    
     //check clicked logo is already favorite or not
     this.albumService.isFavorite(this.logoDetails).then(isFav => {
       this.isFavorite = isFav;
@@ -51,7 +52,6 @@ export class LogoPage {
         alert('Download complete for your image at : ' + entry.toURL());
       });
 
-    this.navCtrl.pop();
   }
 
   //open the pop up for more information
